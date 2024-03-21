@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <nav>
+        <ul>
+             <li class="menu-item menu-item-home current-menu-item current_page_item"><a href="index.html">Домашняя странца</a></li>
+                            <li class="menu-item"><a href="menu.html">Меню</a></li>
+                            <li class="menu-item"><a href="bulochki.html">Наши булочки</a></li>
+                            <li class="menu-item"><a href="about.html">О нас</a></li>
+                            <li class="menu-item"><a href="register.html">Регистрация</a></li>
+                            <li class="menu-item"><a href="blog.html">Новости</a></li>
+							<li class="menu-item"><a href="cheba.html">Помощь</a></li>	
+        </ul>
+    </nav>
+<form action="register.php" method="post">
+  <div class="container">
+    <h1>Регистрация</h1>
+    <p>Пожалуйста, создайте свой аккаунт.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введите Email" name="email" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <label for="psw-repeat"><b>Повторите пароль</b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+    <hr>
+
+    <p>Для создания аккаунта требуется ознакомиться <a href="https://vk.com/mirchiq">Узнать еще?</a>.</p>
+    <button type="submit" class="registerbtn">Зарегистрироваться</button>
+  </div>
+
+  <div class="container signin">
+    <p>Уже есть аккаунт? <a href="#">Войти</a>.</p>
+  </div>
+</form>
+</body>
+</html>

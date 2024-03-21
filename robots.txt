@@ -1,0 +1,28 @@
+User-agent: Google
+Allow: /*.css*
+Allow: /*.png*
+Allow: /*.jpg*
+Allow: /cache/.js*
+Allow: /cache/.css*
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /index.php
+Disallow: /index.html
+Disallow: /search
+Disallow: /useless_file.html
+
+User-agent: Yandex
+Allow: /*.css*
+Allow: /*.png*
+Allow: /*.jpg*
+Allow: /cache/.js*
+Allow: /cache/.css*
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /index.php
+Disallow: /index.html
+Disallow: /search
+Disallow: /useless_file.html
+
+
+

@@ -1,0 +1,751 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Стили */
+.flower-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flower-item {
+    width: calc(33.33% - 20px); /* Три элемента в строке */
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.flower-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.flower-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.flower-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Стили для формы регистрации и входа */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для корзины */
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #d32f2f;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+/* Дополнительные стили по вашему желанию */
+/* styles.css */
+/* ... (предыдущие стили) ... */
+
+/* Анимация для заголовка на главной странице */
+header h1 {
+    font-size: 40px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Анимация для элементов галереи */
+.flower-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.flower-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* styles.css */
+/* ... (предыдущие стили) ... */
+
+/* Стили для корзины */
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    max-width: 50px; /* Максимальная ширина изображения */
+    max-height: 50px; /* Максимальная высота изображения */
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.cart-item button:hover {
+    background-color: #d32f2f;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+
+/* styles.css */
+/* ... (предыдущие стили) ... */
+
+/* Стили для формы */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    grid-column: span 2;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Стили для успешной отправки сообщения */
+.success-message {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.2s;
+}
+
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ff6633;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card__bottom {
+
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+}
+
+.card__price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 19px;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card__price--discount::before {
+  content: "Со скидкой";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__price--common {
+  font-weight: 400;
+  font-size: 17px;
+  color: #606060;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.card__price--common::before {
+  content: "Обычная";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card__title:hover {
+  color: #ff6633;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+.cards{
+	display: grid;
+	/* Автоматически заполняем на всю ширину grid-контейнера */ 
+	grid-template-columns: repeat(auto-fill, 225px); 
+	width: 100%;
+	max-width: 1000px; /* Ширина grid-контейнера */
+	justify-content: center;
+	justify-items: center; /* Размещаем карточку по центру */ 
+	column-gap: 30px; /* Отступ между колонками */ 
+	row-gap: 40px; /* Отступ между рядами */ 
+	margin: 0 auto; 
+}
+
+/* Увеличиваем кнопку при наведении на нее */
+.cart:hover {
+  transform: scale(1.1);
+}
+
+/* Стилизуем счетчик товаров */
+.cart__num {
+  position: absolute;
+  background-color: #d62240;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  top: -5px;
+  right: -5px;
+}
+
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.33); /* Небольшое затемнение на фоне */
+  z-index: 1000; /* Поверх всех окон */
+  width: 100%;
+  height: 100%;
+  display: none; /* По умолчанию скрываем окно */
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  overflow-y: scroll;
+}
+
+/* Стилизация контейнера окна */
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Распределяем элементы внутри равномерно */
+  width: 100%;
+  max-width: 800px;
+  min-height: 300px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Элементы окна (заголовок, список товаров, вывод стоимости) */
+.popup__item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.popup__item:last-of-type {
+  border-bottom: none;
+}
+
+.popup__title {
+  font-size: 20px;
+}
+
+/* Стили для вывода товара */
+.popup__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup__product-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.popup__product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.popup__product-title {
+  max-width: 300px;
+  font-weight: 500;
+}
+
+.popup__product-price {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+/* Стили для кнопки удаления товара */
+.popup__product-delete {
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  color: #d62240;
+}
+
+/* Стили для вывода стоимости товаров */
+.popup__cost {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.popup__cost-title {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #364364;
+  text-align: right;
+}
+
+.popup__cost-value {
+  font-size: 20px;
+}
+
+/* Стили для кнопки закрытия окна */
+.popup__close {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  color: rgba(54, 67, 100, 0.7);
+  font-size: 20px;
+}
+
+.popup__close:hover {
+  color: rgb(54, 67, 100);
+}
+
+.popup--open {
+  display: flex;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
